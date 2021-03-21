@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exercício 3 Loop</title>
+</head>
+<body>
+	<h3>Fatorial de 10</h3>
+	<button id="b1">Calcular</button>
+	<h4 id="resultado1">Resultado</h4>
+	<h3>Calcular fatorial de demais números</h3>
+	<input type="number" id="input1">
+	<button id="b2">Calcular</button>
+	<h4 id="resultado2">Resultado</h4>
+	</body>
+	</html>
+
+	<script type="text/javascript">
+		
+		b1.onclick = function () {
+		let i = 1, r= 1;
+		while (i<=10) {
+			r = (r * i);
+			i++;
+		}
+		resultado1.innerHTML = r;
+					
+		}
+
+		b2.onclick = function () {
+		let numero = Number(input1.value);
+		let i = 1, r= 1;
+		while (i<=numero) {
+			r = (r * i);
+			i++;
+		}
+		resultado2.innerHTML = r;
+					
+		}
+
+		//observação: somatória inicializa com 0 e produtória (multiplicação) inicia com 1
+
+	</script>

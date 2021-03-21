@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Celsius > Fahrenheit</title>
+</head>
+
+<body>
+	<h2>Converter Celsius em Fahrenheit</h2>
+	<h3>Inserir o ºC para que o F seja calculado</h3> 
+	<input type="number" id="i1">
+	<button id="b1">Calcular</button>
+	<h3 id="resultado">Resultado aqui</h3>
+
+	<script type="text/javascript">
+		b1.onclick = function () {
+
+			resultado.textContent = ((Number(i1.value) * 1.8) + 32) + "ºF";
+			}
+
+		</script>
+
+</body>
+</html>

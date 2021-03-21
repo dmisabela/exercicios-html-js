@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exercício 1 Loop</title>
+</head>
+<body>
+	<label>Soma de 1 até 1000</label>
+	<h4>Insira um número X e o resultado será a soma de 1 até o número inserido. (Ex.: se inserir 4, a soma será 1+2+3+4)</h4>
+	<h4>Obs.: Valor máximo é 1000.</h4>
+	<input type="number" id="input1" title="Digite número até 1000">
+	<h4 id="resultado">Resultado</h4>
+	</body>
+	</html>
+
+	<script type="text/javascript">
+		
+		input1.onchange = function () {
+		let numero = Number(input1.value);
+		let i = 0, r = 0; //iniciar com 0 para não dar erro por ser indefinido, e se somar indefinido + 1 não chega ao resultado
+		if (numero>1000) 
+		{
+			resultado.innerHTML = "Número Inválido"
+		}
+
+		else 
+		{
+		while (i <= numero) {
+		
+			r = r + i;
+
+			i++;
+
+			//a cada repetição você adiciona a r o próximo número
+			
+		}
+
+		resultado.innerHTML = r;
+
+		}
+
+		}
+
+		</script>

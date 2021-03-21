@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exercício 10.06</title>
+</head>
+<body>
+	<script type="text/javascript">
+        let array = [8,87,24,4,70,24,9,98,77,88];
+        let somanum;
+        let medianum; 
+        
+
+        document.write(array + "<br/>");
+        
+        somanum = 0;
+
+        for (let num of array) {
+            somanum += num;
+        }
+
+        document.write("Soma é: " + somanum + "<br/>");
+
+        medianum = somanum / array.length;
+
+        document.write("Média é: " + medianum + "<br/>");
+
+        array.sort()
+        document.writeln (array)
+
+       
+
+        
+	</script>
+</body>
+</html>

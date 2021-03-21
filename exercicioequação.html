@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Equação 2º Grau</title>
+</head>
+<body>
+
+	<h1>Calcular equação de segundo grau. Coloque abaixo as variáveis (apenas números): ax²+bx+c </h1>
+	<input type="number" id="i1">
+	<input type="number" id="i2">
+	<input type="number" id="i3">
+	<button id="b1">Calcular</button>
+	<h3 id="resultado">Resultado aqui</h3>
+	<h2>Obs.: colocar variáveis a, b e c respectivamente.</h2>
+
+<script type="text/javascript">
+
+	let a = Number(i1.value);
+	let b = Number(i2.value);
+	let c = Number(i3.value);
+	let delta = ((Number(i2.value)) ** 2) - (4 * Number(i1.value) * Number(i3.value));
+	
+	
+b1.onclick = function () {
+
+	if (delta < 0)
+	{
+		
+		resultado.textContent = ("Não há raízes");
+	
+	}
+
+	else if (delta == 0)
+	{
+		
+		resultado.textContent = ("Há uma raiz. Raiz =" + ((-b)/(2*a)));
+	
+	}
+
+	else 
+	{
+		
+		raiz1 = ((-b) +  (delta**0.5)) / (2 * a);
+		raiz2 = ((-b) -(delta**0.5)) / (2 * a);
+		resultado.textContent = ("há duas raizes, que são:" + raiz1 + "  ,  " + raiz2);
+	}
+}
+		
+</script>
+
+</body>
+</html>
